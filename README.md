@@ -172,9 +172,8 @@ Display Story
 
 # System Architecture
 
-```
 ![System Architecture](docs/architecture.png)
-```
+
 
 ---
 
