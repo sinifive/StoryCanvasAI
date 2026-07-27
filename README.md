@@ -58,6 +58,8 @@ The entire pipeline is optimized for AMD Radeon GPUs using ROCm-compatible PyTor
 
 ---
 
+![Home page](docs/Home.png)
+
 # Features
 
 ## AI Story Generation
