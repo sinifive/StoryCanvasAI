@@ -57,8 +57,15 @@ The platform:
 The entire pipeline is optimized for AMD Radeon GPUs using ROCm-compatible PyTorch inference.
 
 ---
+##Screenshots
+
+###Home Page
 
 ![Home page](docs/Home.png)
+
+###Generating Story
+
+![Generating](docs/generating.png)
 
 # Features
 
