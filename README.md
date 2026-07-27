@@ -204,11 +204,32 @@ Qwen2.5 generates
 Output
 
 ```json
-{
-  "title":"The Brave Rabbit",
-  "genre":"Fantasy",
-  "pages":[ ... ]
-}
+{{
+    "title":"",
+    "genre":"",
+    "characters":[
+        {{
+            "name":"",
+            "age":"",
+            "gender":"",
+            "species":"",
+            "hair":"",
+            "eyes":"",
+            "clothes":"",
+            "accessories":"",
+            "personality":"",
+            "description":""
+        }}
+    ],
+    "pages":[
+        {{
+            "page":1,
+            "story":"",
+            "characters":[],
+            "image_prompt":""
+        }}
+    ]
+}}
 ```
 
 ---
@@ -342,46 +363,103 @@ MP4 Storybook
 
 ```
 StoryCanvasAI/
-
+│
 ├── backend/
-│
-├── api/
-│   ├── app.py
-│   ├── routes.py
-│   └── jobs.py
-│
-├── pipeline/
-│   └── story_pipeline.py
-│
-├── story_engine/
-│   ├── director.py
-│   ├── image_generator.py
-│   ├── audio_generator.py
-│   ├── pdf_builder.py
-│   └── video_builder.py
-│
-├── services/
-│   ├── qwen.py
-│   ├── flux.py
-│   └── kokoro.py
-│
-├── generated/
-│   ├── images/
-│   ├── audio/
-│   ├── pdf/
-│   └── video/
+│   │
+│   ├── api/
+│   │   ├── app.py
+│   │   ├── routes.py
+│   │   └── jobs.py
+│   │
+│   ├── models/
+│   │   └── schemas.py
+│   │
+│   ├── pipeline/
+│   │   └── story_pipeline.py
+│   │
+│   ├── story_engine/
+│   │   ├── director.py
+│   │   └── story_parser.py
+│   │
+│   ├── image_engine/
+│   │   └── image_generator.py
+│   │
+│   ├── audio_engine/
+│   │   └── audio_generator.py
+│   │
+│   ├── pdf_engine/
+│   │   └── pdf_builder.py
+│   │
+│   ├── video_engine/
+│   │   └── video_builder.py
+│   │
+│   ├── prompts/
+│   │   └── story_prompt.py
+│   │
+│   ├── services/
+│   │   ├── qwen.py
+│   │   ├── flux.py
+│   │   └── kokoro.py
+│   │
+│   ├── generated/
+│   │   ├── images/
+│   │   ├── audio/
+│   │   ├── pdf/
+│   │   ├── video/
+│   │   └── stories/
+│   │       └── story.json
+│   │
+│   ├── requirements.txt
+│   ├── Dockerfile
+│   └── __init__.py
 │
 ├── frontend/
+│   │
+│   ├── public/
+│   │
+│   ├── src/
+│   │   │
+│   │   ├── assets/
+│   │   │
+│   │   ├── components/
+│   │   │   ├── AudioPlayer.jsx
+│   │   │   ├── DownloadPanel.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   ├── GenerateButton.jsx
+│   │   │   ├── LoadingScreen.jsx
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── PromptBox.jsx
+│   │   │   └── StoryViewer.jsx
+│   │   │
+│   │   ├── pages/
+│   │   │   └── Home.jsx
+│   │   │
+│   │   ├── services/
+│   │   │   └── api.js
+│   │   │
+│   │   ├── utils/
+│   │   │   └── constants.js
+│   │   │
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
+│   │
+│   ├── package.json
+│   ├── vite.config.js
+│   └── dist/
 │
-├── src/
-│   ├── pages/
-│   ├── components/
-│   ├── services/
-│   └── utils/
+├── docs/
+│   ├── architecture.png
+│   ├── workflow.png
+│   ├── homepage.png
+│   ├── loading.png
+│   ├── story-viewer.png
+│   ├── pdf-output.png
+│   └── video-output.png
 │
-├── README.md
-├── requirements.txt
-└── Dockerfile
+├── .gitignore
+├── LICENSE
+└── README.md
 ```
 
 ---
@@ -662,6 +740,8 @@ Completed Storybook
 # Contributors
 
 Team **Sinifive**
+
+**M.Bharath Kumar**
 
 AMD AI DevMaster Hackathon 2026
 
