@@ -1,7 +1,27 @@
-# 📖 StoryCanvas AI
+
+<p align="center">
+  <img src="docs/banner.png" width="100%">
+</p>
+
+<h1 align="center">📖 StoryCanvas AI</h1>
+
 ### AI-Powered Multimodal Story Creation Platform
 **AMD AI DevMaster Hackathon 2026 – Track 1: Multimodal Content Creation**
+<p align="center">
 
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
+
+![React](https://img.shields.io/badge/React-Frontend-61dafb)
+
+![PyTorch](https://img.shields.io/badge/PyTorch-AI-red)
+
+![ROCm](https://img.shields.io/badge/AMD-ROCm-orange)
+
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
+</p>
 ---
 
 <p align="center">
@@ -57,13 +77,21 @@ The platform:
 The entire pipeline is optimized for AMD Radeon GPUs using ROCm-compatible PyTorch inference.
 
 ---
-##Screenshots
 
-###Home Page
+
+## Screenshots
+
+---
+
+### Home Page
+
+---
 
 ![Home page](docs/Home.png)
 
-###Generating Story
+### Generating Story
+
+---
 
 ![Generating](docs/generating.png)
 
