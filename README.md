@@ -105,7 +105,7 @@ React frontend  ──POST /generate──▶  FastAPI backend ──returns job
                                             │
                                             ▼ job manager dispatches
                                    ┌────────────────────────┐
-                                   │   StoryPipeline.generate()   │
+                                   │StoryPipeline.generate()│
                                    └────────────────────────┘
                                      │         │         │
                               Story director  Image gen  Audio gen
@@ -114,14 +114,14 @@ React frontend  ──POST /generate──▶  FastAPI backend ──returns job
                                      └────┬────┴────┬────┘
                                           ▼          ▼
                                      Story JSON (merged page data)
-                                          │
-                            ┌─────────────┼──────────────┐
-                            ▼             ▼              ▼
-                      Story Viewer   PDF builder    Video builder
-                     (live in React)  (ReportLab)     (MoviePy)
-                            └─────────────┴──────────────┘
-                                          ▼
-                                Final downloads: PDF + MP4
+                                              │
+                                ┌─────────────┼──────────────┐
+                                ▼             ▼              ▼
+                          Story Viewer   PDF builder    Video builder
+                         (live in React)  (ReportLab)     (MoviePy)
+                                └─────────────┴──────────────┘
+                                              ▼
+                                    Final downloads: PDF + MP4
 ```
  
 *(See `docs/architecture.png` for the rendered diagram.)*
@@ -340,7 +340,7 @@ StoryCanvasAI/
 - ≥ 40 GB free VRAM recommended (see [§9](#9-performance-benchmarks))
 ### Clone
 ```bash
-git clone https://github.com/USERNAME/StoryCanvasAI.git
+git clone https://github.com/sinifive/StoryCanvasAI.git
 cd StoryCanvasAI
 ```
  
