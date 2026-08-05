@@ -316,12 +316,12 @@ StoryCanvasAI/
 │   ├── architecture.png
 │   ├── Home.png
 │   ├── generating.png
-│   ├── pdf-output.png
-│   └── video-output.png
+│   └── pdf-output.png
 │
 ├── .gitignore
-├── LICENSE
-└── README.md
+├── Demo_video_StorycanvasAI .mp4
+├── StoryCanvas_AI.pptx
+├── README.md
 └── requirements.txt
 
 ```
