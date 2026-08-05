@@ -253,40 +253,39 @@ Measured on the AMD Radeon Cloud test environment:
 ```
 StoryCanvasAI/
 │
-├── backend/
-│   ├── api/
+├── backend/      
+│   ├── api/                #Handles jobs and the api routes
 │   │   ├── app.py
 │   │   ├── routes.py
 │   │   └── jobs.py
-│   ├── models/
+│   ├── models/            #It has the defined schema
 │   │   └── schemas.py
-│   ├── pipeline/
+│   ├── pipeline/          #orchestrator
 │   │   └── story_pipeline.py
 │   ├── story_engine/
 │   │   ├── director.py
 │   │   └── story_parser.py
-│   ├── image_engine/
+│   ├── image_engine/       #generates images
 │   │   └── image_generator.py
-│   ├── audio_engine/
+│   ├── audio_engine/        #generates audio
 │   │   └── audio_generator.py
-│   ├── pdf_engine/
+│   ├── pdf_engine/          #generates pdfs
 │   │   └── pdf_builder.py
-│   ├── video_engine/
+│   ├── video_engine/        #generates video
 │   │   └── video_builder.py
-│   ├── prompts/
+│   ├── prompts/             #predefined prompt
 │   │   └── story_prompt.py
-│   ├── services/
+│   ├── services/            #Loading of models and generation
 │   │   ├── qwen.py
 │   │   ├── flux.py
 │   │   └── kokoro.py
-│   ├── generated/
+│   ├── generated/          #generated multimedia is stored in here as per the category
 │   │   ├── images/
 │   │   ├── audio/
 │   │   ├── pdf/
 │   │   ├── video/
 │   │   └── stories/story.json
 │   ├── requirements.txt
-│   ├── Dockerfile
 │   └── __init__.py
 │
 ├── frontend/
@@ -312,13 +311,11 @@ StoryCanvasAI/
 │   ├── vite.config.js
 │   └── dist/
 │
-├── docs/
+├── docs/                  #Samples of the outputs generated
 │   ├── banner.png
 │   ├── architecture.png
-│   ├── workflow.png
 │   ├── Home.png
 │   ├── generating.png
-│   ├── story-viewer.png
 │   ├── pdf-output.png
 │   └── video-output.png
 │
@@ -389,7 +386,21 @@ Enter a prompt, e.g.:
 ```
 A little dragon learns to fly with the help of forest animals.
 ```
- 
+---
+
+### If using RC Tunnel
+change
+```
+export const API_BASE = "http://127.0.0.1:8000";
+```
+from  frontend/src/utils/constants.js
+
+to 
+```
+export const API_BASE = "RC TUNNEL URL";
+```
+and execute npm run build and move to that link
+---
 Click **Generate Story** — the system will generate the story, illustrate every page, synthesize narration, and build the PDF + MP4 automatically.
  
 ---
