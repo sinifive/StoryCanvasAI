@@ -17,9 +17,13 @@
 </p>
 ---
 
+# Demo Video
+if you cannot download the video uploaded in the repository click on the below thumbnail..
+---
 
-Demo Video if cant download the video uploaded in repo...
-![Demo Video](https://youtu.be/j72DCqn7miQ?si=9eePpznu_ZbSJP0g)
+[![Watch the video](https://img.youtube.com/vi/j72DCqn7miQ/maxresdefault.jpg)](https://youtu.be/j72DCqn7miQ)
+
+---
 ## Table of Contents
  
 1. [Overview](#1-overview)
