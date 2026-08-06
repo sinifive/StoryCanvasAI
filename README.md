@@ -16,7 +16,10 @@
   <b>Prompt → Story → Illustrations → Narration → PDF → MP4 — one pipeline, one GPU.</b>
 </p>
 ---
- 
+
+
+Demo Video if cant download the video uploaded in repo...
+![Demo Video](https://youtu.be/j72DCqn7miQ?si=9eePpznu_ZbSJP0g)
 ## Table of Contents
  
 1. [Overview](#1-overview)
