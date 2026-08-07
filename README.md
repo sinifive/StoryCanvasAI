@@ -18,7 +18,7 @@
 ---
 
 # Demo Video
-if you cannot download the video uploaded in the repository click on the below thumbnail..
+if you cannot download the video uploaded in the repository click on the below thumbnail...
 ---
 
 [![Watch the video](https://img.youtube.com/vi/j72DCqn7miQ/maxresdefault.jpg)](https://youtu.be/j72DCqn7miQ)
